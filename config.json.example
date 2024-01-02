@@ -1,0 +1,14 @@
+{
+    "groupVersionKinds": [{"group": "apps", "version": "v1", "kind": "Deployment"}, {"group": "", "version": "v1", "kind": "Pod"}, {"group": "", "version": "route.openshift.io/v1", "kind":"Route"}],
+    "namespaces": ["konveyor-tackle"],
+    "kubeConfigPath": "",
+    "policySets": [
+        {
+            "name": "bestpractices",
+            "query": "data.ocp.bestpractices",
+            "path": "rego-policies/policy",
+            "excludeSubstrings": [
+                "test_data"
+            ]}
+    ]
+}
